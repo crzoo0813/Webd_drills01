@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*reset*/
+* {margin: 0; padding: 0; color: #222328;}
+li {list-style: none;}
+a {text-decoration: none;}
+.clearfix::before, .clearfix::after {display: block; content: ""; clear: both;}
+
+/*layout*/
+#wrap {width: 1200px; height: 700px; margin: 0 auto;}
+
+/*header*/
+#header {text-align: center;}
+#header .logo {float: left; width: 200px; height: 100px; line-height: 100px; font-size: 25px;}
+#header .nav {float: right; width: 600px; margin-top: 28px; margin-right: 10px; background: #dddccc}
+#header .nav li {position: relative; float: left; width: 25%; text-align: center;}
+#header .nav li a {padding: 10px; display: block;}
+#header .nav li a:hover {background: rgba(0,0,0,0.4);}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #dddccc; z-index: 100;}
+#header .nav li ul.submenu li {width: 100%;}
+#header .nav li ul.submenu li a:hover {background: rgba(0,0,0,0.5);}
+
+/*slide*/
+#slide {height: 300px; overflow: hidden;}
+#slide img {width: 100%; display: block;}
+/* 상하
+.slidelist {position: relative; width: 1200px; height: 300px;}
+.slidelist .slideImg {position: relative;}
+.slidelist .slideImg h2 {position: absolute; left: 50%; top: 50%;
+transform: translate(-50%,-50%); background: rgba(0,0,0,0.4); padding: 10px 30px;
+border-radius: 20px;}
+*/
+/*좌우*/
+.slidelist {position: relative; width: 3600px; z-index: 50;}
+.slidelist .slideimg {position: relative; width: 1200px; float: left;}
+.slidelist .slideimg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.4); padding: 10px 30px; border-radius: 20px;}
+
+/*contents*/
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.333333%;}
+#contents > div.tab-menu {height: 200px; line-height: 200px;}
+#contents > div.banner {height: 200px; line-height: 200px;}
+#contents > div.straight {height: 200px; line-height: 200px;}
+
+
+/*tab-menu*/
+.tab-menu {padding: 10px;}
+
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float: left; width: 160px; background: #dddccc; text-align: center; border: 1px solid white}
+.tab-menu .tab-btn li.active {text-decoration: underline}
+.tab-menu .tab-btn li a {padding: 10px; display: block;}
+.tab-menu .tab-cont {padding: 20px; background: #ddd; text-align: left;}
+.tab-menu .tab-cont .gal > div {float: left;height: 100px; background-color: #fff;}
+.tab-menu .tab-cont img {width: 100px; margin: 0 7px 0 5px; background: #dddccc}
+
+/*layer*/
+.layer {display: none; width: 500px; height: 500px; background: #fff; border: 2px solid #000; position: absolute; left: 50%; top: 50%; margin-left: -250px; margin-top: -250px; z-index: 1000;}
+.layer h2 {text-align: left; color: #000;}
+.layer .close {position: absolute; bottom: 20px; right: 20px;}
+.layerbg {display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.6); position: absolute; left: 0; top: 0; z-index: 900;}
+
+#footer {width: 100%; height: 100px; background: #aaa;}
