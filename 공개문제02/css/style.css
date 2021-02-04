@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*reset*/
+* {margin: 0; padding: 0; color: #000;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+/*clearfix*/
+.clearfix::before, .clearfix::after {display: block; content: ""; clear: both;}
+
+/*wrap*/
+#wrap {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+/*header*/
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.header .logo {
+  float: left;
+  width: 200px;
+  height: 100px
+}
+
+.header .logo img {
+  width: 200px;
+  height: 40px;
+  padding-top: 20px
+}
+
+.header .nav {
+  float: right;
+  width: 600px;
+  margin-top: 29px;
+}
+
+.header .nav li {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 25%;
+  background: rgba(0,0,0,0.3);
+}
+
+.header .nav li a {
+  padding: 10px;
+  display: block;
+}
+
+.header .nav li a:hover {
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.header .nav li ul.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  z-index: 100;
+}
+
+.header .nav li ul.submenu li {
+  width: 100%;
+}
+
+/*
+서브메뉴의 마우스오버효과가 필요한경우
+.header .nav li ul.submenu li a:hover {background: #색상;}
+*/
+
+/*slideimage*/
+.imgslide {
+  overflow: hidden;
+  height: 300px;
+}
+.imgslide img {
+  width: 100%;
+  display: block;
+}
+.imgslide .slidelist {
+  position: relative;
+  width: 3600px;
+  height: 300px;
+}
+.imgslide .slidelist .slideimg {
+  float: left;
+  position: relative;
+  width: 1200px;
+}
+.imgslide .slidelist .slideimg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  background: rgba(0,0,0,0.4);
+  border-radius: 2rem;
+  padding: 10px 30px;
+}
+
+/*contents*/
+.contents {
+  width: 1200px;
+  height: 200px;
+}
+
+.contents > div {
+  float: left;
+  width: 33.3333%;
+}
+
+/*탭메뉴*/
+.tabbox {
+  height: 180px;
+  padding: 10px;
+}
+
+.tabbox .tabbtn ul {
+  overflow: hidden;
+}
+
+.tabbox .tabbtn li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tabbox .tabbtn li.active {
+  text-decoration: underline;
+}
+
+.tabbox .tabbtn li a {
+  padding: 10px;
+  display: block;
+}
+
+/*탭메뉴 공지사항 내용*/
+.tabbox .tabcont {
+  width: 380px;
+}
+
+.tabbox .tabcont li a {
+  float: left;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabbox .tabcont li span {
+  float: right;
+  text-align: right;
+  width: 30%;
+}
+
+
+
+
+
+
